@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "survey-opus"
+version = "0.1.0"
+description = "NGS OPUS (Online Positioning User Service) client for the Surveying Suite"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Charles Rieck" }]
+keywords = ["surveying", "gnss", "rinex", "opus", "ngs", "geodesy"]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+# requests is used for uploads when available; otherwise stdlib urllib is used.
+network = ["requests>=2.28"]
+
+[project.urls]
+Homepage = "https://github.com/crieck2010/survey-opus"
+
+[project.scripts]
+survey-opus = "survey_opus.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
