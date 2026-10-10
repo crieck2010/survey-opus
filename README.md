@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> **Consolidated into [SurveySuite](https://github.com/crieck2010/survey-suite)**  
+> This engine has been consolidated into the unified [SurveySuite monorepo](https://github.com/crieck2010/survey-suite). Active development, bug fixes, releases, and unified testing now live in `survey-suite`. This repository is preserved as an archive.
+
 # survey-opus
 
 A Python client for **NOAA NGS OPUS** (Online Positioning User Service) — part of the
@@ -185,3 +189,4 @@ the etiquette guide. `CHANGELOG.md` tracks releases (semver).
 ## License
 
 MIT — © 2026 Charles Rieck. See `LICENSE`.
+
